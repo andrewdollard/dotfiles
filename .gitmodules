@@ -7,27 +7,12 @@
 [submodule ".scm_breeze"]
 	path = .scm_breeze
 	url = https://github.com/scmbreeze/scm_breeze
-[submodule "tmux-battery"]
-	path = tmux-battery
-	url = ./.tmux/plugins/tmux-battery
-[submodule "tmux-sensible"]
-	path = tmux-sensible
-	url = ./.tmux/plugins/tmux-sensible
-[submodule "tmux-themepack"]
-	path = tmux-themepack
-	url = ./.tmux/plugins/tmux-themepack
 [submodule ".tmux/plugins/tmux-battery"]
 	path = .tmux/plugins/tmux-battery
-	url = ./.tmux/plugins/tmux-battery
+	url = https://github.com/tmux-plugins/tmux-battery.git
 [submodule ".tmux/plugins/tmux-sensible"]
 	path = .tmux/plugins/tmux-sensible
-	url = ./.tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
 [submodule ".tmux/plugins/tmux-themepack"]
 	path = .tmux/plugins/tmux-themepack
-	url = ./.tmux/plugins/tmux-themepack
-[submodule "scm_breeze"]
-	path = scm_breeze
-	url = https://github.com/scmbreeze/scm_breeze
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
+	url = https://github.com/jimeh/tmux-themepack.git
