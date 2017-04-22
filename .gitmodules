@@ -4,3 +4,15 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = ./.oh-my-zsh
+[submodule ".scm_breeze"]
+	path = .scm_breeze
+	url = ./.scm_breeze
+[submodule "tmux-battery"]
+	path = tmux-battery
+	url = ./.tmux/plugins/tmux-battery
+[submodule "tmux-sensible"]
+	path = tmux-sensible
+	url = ./.tmux/plugins/tmux-sensible
+[submodule "tmux-themepack"]
+	path = tmux-themepack
+	url = ./.tmux/plugins/tmux-themepack
