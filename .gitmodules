@@ -3,10 +3,10 @@
 	url = https://github.com/braintreeps/vim_dotfiles.git
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
-	url = ./.oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule ".scm_breeze"]
 	path = .scm_breeze
-	url = ./.scm_breeze
+	url = https://github.com/scmbreeze/scm_breeze
 [submodule "tmux-battery"]
 	path = tmux-battery
 	url = ./.tmux/plugins/tmux-battery
@@ -25,3 +25,9 @@
 [submodule ".tmux/plugins/tmux-themepack"]
 	path = .tmux/plugins/tmux-themepack
 	url = ./.tmux/plugins/tmux-themepack
+[submodule "scm_breeze"]
+	path = scm_breeze
+	url = https://github.com/scmbreeze/scm_breeze
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
