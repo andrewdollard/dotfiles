@@ -16,3 +16,6 @@
 [submodule "tmux-themepack"]
 	path = tmux-themepack
 	url = ./.tmux/plugins/tmux-themepack
+[submodule ".tmux/plugins/tmux-battery"]
+	path = .tmux/plugins/tmux-battery
+	url = ./.tmux/plugins/tmux-battery
