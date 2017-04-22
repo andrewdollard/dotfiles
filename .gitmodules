@@ -19,3 +19,9 @@
 [submodule ".tmux/plugins/tmux-battery"]
 	path = .tmux/plugins/tmux-battery
 	url = ./.tmux/plugins/tmux-battery
+[submodule ".tmux/plugins/tmux-sensible"]
+	path = .tmux/plugins/tmux-sensible
+	url = ./.tmux/plugins/tmux-sensible
+[submodule ".tmux/plugins/tmux-themepack"]
+	path = .tmux/plugins/tmux-themepack
+	url = ./.tmux/plugins/tmux-themepack
