@@ -1,0 +1,6 @@
+[submodule "vim_dotfiles"]
+	path = vim_dotfiles
+	url = ./vim_dotfiles
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = ./.oh-my-zsh
