@@ -1,3 +1,7 @@
+[submodule "vim_dotfiles"]
+	path = vim_dotfiles
+	url = https://github.com/andrewdollard/vim_dotfiles.git
+	branch = master
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
@@ -16,7 +20,3 @@
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "vim_dotfiles"]
-	path = vim_dotfiles
-	url = https://github.com/andrewdollard/vim_dotfiles.git
-	branch = master
