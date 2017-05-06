@@ -88,5 +88,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias cfg='/usr/bin/git --git-dir=/Users/andrew/.cfg/ --work-tree=/Users/andrew'
 alias gh='git hist -20'
+alias serve='ruby -run -ehttpd . -p3000'
 
 [ -s "/Users/andrew/.scm_breeze/scm_breeze.sh" ] && source "/Users/andrew/.scm_breeze/scm_breeze.sh"
