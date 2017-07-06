@@ -90,4 +90,5 @@ alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias gh='git hist -20'
 alias serve='ruby -run -ehttpd . -p8000'
 
+unsetopt share_history
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
