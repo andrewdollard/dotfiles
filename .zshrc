@@ -89,6 +89,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias gh='git hist -20'
+alias gs='git status'
+alias gd='git diff'
 alias serve='ruby -run -ehttpd . -p8000'
 
 unsetopt share_history
