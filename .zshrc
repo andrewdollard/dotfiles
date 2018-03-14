@@ -87,11 +87,18 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias gh='git hist -20'
+alias cgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+alias gh='git hist -n20'
 alias gs='git status'
 alias gd='git diff'
+
 alias serve='ruby -run -ehttpd . -p8000'
+alias rserve='ruby -run -ehttpd . -p8000'
+
+# Android SDK
+# export ANDROID_HOME=~/Library/Android/sdk
+# export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
 unsetopt share_history
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
