@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# See http:s//github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="simple"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -93,8 +93,14 @@ alias gh='git hist -n20'
 alias gs='git status'
 alias gd='git diff'
 
+alias python='python3'
+alias pip='pip3'
+
 alias serve='ruby -run -ehttpd . -p8000'
 alias rserve='ruby -run -ehttpd . -p8000'
+
+# alias python='python3'
+# alias pip='pip3'
 
 # Android SDK
 # export ANDROID_HOME=~/Library/Android/sdk
@@ -102,3 +108,10 @@ alias rserve='ruby -run -ehttpd . -p8000'
 
 unsetopt share_history
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+
+export PATH="$GOPATH/bin:$PATH:$HOME/.rvm/bin"
+
+export JAVA_HOME=`/usr/libexec/java_home`
+export AIRFLOW_HOME=/Users/adollard/data_eng/airflow/projects/tutorial2
+export PATH=/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH
+
