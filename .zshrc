@@ -94,7 +94,7 @@ alias gs='git status'
 alias gd='git diff'
 
 alias python='python3'
-alias pip='pip3'
+alias pip='python3 -m pip'
 
 alias rserve='ruby -run -ehttpd . -p8000'
 
