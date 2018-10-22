@@ -9,6 +9,7 @@
 [core]
   editor = "vim"
   excludesfile = /Users/andrew/.gitignore_global
+  pager = less -F -X
 [alias]
   cm = "commit"
   co = "checkout"
