@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 export PATH="/usr/local/bin:$PATH"
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+#~/miniconda3/bin: expor tPATH=$HOME/bin:/usr/local/bin:$PATH
+
+# export PATH="$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -85,17 +87,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 alias cgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 alias gh='git hist -n20'
 alias gs='git status'
 alias gd='git diff'
-
-alias python='python3'
-alias pip='python3 -m pip'
-
 alias rserve='ruby -run -ehttpd . -p8000'
 
 # Android SDK
@@ -104,4 +102,25 @@ alias rserve='ruby -run -ehttpd . -p8000'
 
 unsetopt share_history
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+
+# expor NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(pyenv init -)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/Users/adollard/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/Users/adollard/miniconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/adollard/miniconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/Users/adollard/miniconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# <<< conda initialize <<<
 
