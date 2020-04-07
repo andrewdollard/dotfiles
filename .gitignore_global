@@ -12,3 +12,4 @@ Thumbs.db
 *.ruby-gemset
 *.ruby-version*
 .idea
+node_modules
