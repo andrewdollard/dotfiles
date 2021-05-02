@@ -1,0 +1,37 @@
+# vi: ft=zsh
+
+export EDITOR=vi
+export HOMEBREW_NO_AUTO_UPDATE=1
+unsetopt share_history
+
+# Aliases
+alias cgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias gh='git hist -n20'
+alias gs='git status'
+alias gd='git diff'
+alias sed='gsed'
+
+# Python
+eval "$(pyenv init -)"
+PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+PATH="$PATH:$PYTHON_BIN_PATH"
+
+# Android SDK / Java
+export ANDROID_SDK=/Users/andrew/Library/Android/sdk
+export ANDROID_SDK_ROOT=$ANDROID_SDK
+export PATH=${PATH}:${ANDROID_SDK}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# NPM
+NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$PATH:$NPM_PACKAGES/bin"
+# Preserve MANPATH if you already defined it somewhere in your config.
+# Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
+export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
+# expor NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"

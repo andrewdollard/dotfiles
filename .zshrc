@@ -1,10 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-export PATH="/usr/local/bin:$PATH"
-#~/miniconda3/bin: expor tPATH=$HOME/bin:/usr/local/bin:$PATH
-
-# export PATH="$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
-
-# Path to your oh-my-zsh installation.
+export PATH="/usr/bin:/usr/local/bin:$PATH"
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -87,52 +81,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-alias cgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
-alias gh='git hist -n20'
-alias gs='git status'
-alias gd='git diff'
-alias rserve='ruby -run -ehttpd . -p8000'
-
-# Android SDK
-# export ANDROID_HOME=~/Library/Android/sdk
-# export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
-
-unsetopt share_history
-[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
-
-# expor NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-##############
-# NPM
-##############
-NPM_PACKAGES="${HOME}/.npm-packages"
-export PATH="$PATH:$NPM_PACKAGES/bin"
-# Preserve MANPATH if you already defined it somewhere in your config.
-# Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
-export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
-
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-eval "$(pyenv init -)"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/Users/adollard/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/Users/adollard/miniconda3/etc/profile.d/conda.sh" ]; then
-#         . "/Users/adollard/miniconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/Users/adollard/miniconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<
-
+source .personalrc
