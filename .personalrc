@@ -2,7 +2,9 @@
 
 export EDITOR=vi
 export HOMEBREW_NO_AUTO_UPDATE=1
-unsetopt share_history
+if [ "$(command -v unsetopt)" ]; then
+  unsetopt share_history
+fi
 
 # Aliases
 alias cgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
