@@ -1,4 +1,4 @@
-# vi: ft=zsh
+# vi: ft=bash
 
 export EDITOR=vi
 export HOMEBREW_NO_AUTO_UPDATE=1
@@ -35,3 +35,9 @@ export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
 
 # [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  setxkbmap -option ctrl:swapcaps
+  xcape -e 'Control_L=Escape'
+fi
+
