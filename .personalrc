@@ -12,31 +12,39 @@ alias gd='git diff'
 alias sed='gsed'
 
 # Python
-eval "$(pyenv init -)"
-PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
-PATH="$PATH:$PYTHON_BIN_PATH"
+if [ "$(command -v pyenv)" ]; then
+  eval "$(pyenv init -)"
+  PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+  PATH="$PATH:$PYTHON_BIN_PATH"
+fi
 
 # Android SDK / Java
-export ANDROID_SDK=/Users/andrew/Library/Android/sdk
-export ANDROID_SDK_ROOT=$ANDROID_SDK
-export PATH=${PATH}:${ANDROID_SDK}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+if [ "$(command -v jenv)" ]; then
+  export ANDROID_SDK=/Users/andrew/Library/Android/sdk
+  export ANDROID_SDK_ROOT=$ANDROID_SDK
+  export PATH=${PATH}:${ANDROID_SDK}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools
+  export PATH="$HOME/.jenv/bin:$PATH"
+  eval "$(jenv init -)"
+fi
 
 # NPM
-NPM_PACKAGES="${HOME}/.npm-packages"
-export PATH="$PATH:$NPM_PACKAGES/bin"
-# Preserve MANPATH if you already defined it somewhere in your config.
-# Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
-export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
-# expor NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+if [ "$(command -v jenv)" ]; then
+  NPM_PACKAGES="${HOME}/.npm-packages"
+  export PATH="$PATH:$NPM_PACKAGES/bin"
+  # Preserve MANPATH if you already defined it somewhere in your config.
+  # Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
+  export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
+  # expor NVM_DIR="$HOME/.nvm"
+  # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
 
 
 # [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+if [[ "$OSTYPE" == "linux-gnu"* ]] \
+  && [[ "$(command -v setkxbmap)" ]] \
+  && [[ "$(command -v xcape)" ]]; then
   setxkbmap -option ctrl:swapcaps
   xcape -e 'Control_L=Escape'
 fi
