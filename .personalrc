@@ -1,5 +1,18 @@
 # vi: ft=bash
 
+function git_branch_name() {
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo ' ('$branch')'
+  fi
+}
+
+setopt PROMPT_SUBST
+export PROMPT='%F{2}%m%f%F{green}:%f%F{10}%~%f%B%F{12}$(git_branch_name)%f%b $ '
+
 export EDITOR=vi
 export HOMEBREW_NO_AUTO_UPDATE=1
 if [ "$(command -v unsetopt)" ]; then
@@ -11,6 +24,7 @@ alias cgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias gh='git hist -n20'
 alias gs='git status'
 alias gd='git diff'
+alias gds='git diff --staged'
 alias sed='gsed'
 
 # Python
@@ -50,4 +64,3 @@ if [[ "$OSTYPE" == "linux-gnu"* ]] \
   setxkbmap -option ctrl:swapcaps
   xcape -e 'Control_L=Escape'
 fi
-
