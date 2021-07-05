@@ -11,7 +11,7 @@ function git_branch_name() {
 }
 
 setopt PROMPT_SUBST
-export PROMPT='%F{2}%m%f%F{green}:%f%F{10}%~%f%B%F{12}$(git_branch_name)%f%b $ '
+export PROMPT='%? %F{2}%m%f%F{green}:%f%F{10}%~%f%B%F{12}$(git_branch_name)%f%b $ '
 
 export EDITOR=vi
 export HOMEBREW_NO_AUTO_UPDATE=1
@@ -26,6 +26,8 @@ alias gs='git status'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias sed='gsed'
+alias ls='lsd'
+alias ll='lsd -lah'
 
 # Python
 if [ "$(command -v pyenv)" ]; then

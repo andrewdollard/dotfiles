@@ -3,6 +3,11 @@ export PATH="/usr/bin:/usr/local/bin:$PATH"
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
+autoload -U compinit #promptinit
+compinit
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+
+
 # export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
