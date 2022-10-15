@@ -1,4 +1,4 @@
-export PATH="/usr/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/brew/bin:/usr/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH"
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
@@ -6,6 +6,16 @@ bindkey '^R' history-incremental-search-backward
 autoload -U compinit #promptinit
 compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+
+bindkey "^[b" backward-word
+bindkey "^[f" forward-word
+
+setopt inc_append_history
+HISTSIZE=99999
+SAVEHIST=$HISTSIZE
+
+# bindkey "^[a" beginning-of-line
+# bindkey "^[e" end-of-line
 
 
 # export ZSH=$HOME/.oh-my-zsh
