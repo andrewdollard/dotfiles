@@ -1,0 +1,15 @@
+.DS_Store*
+.DS_Store
+.log
+*.sql
+*.sqlite
+Thumbs.db
+*.zip
+*.un~
+*.swp
+*.rvmrc
+*.xcuserstate
+*.ruby-gemset
+*.ruby-version*
+.idea
+node_modules

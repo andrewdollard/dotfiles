@@ -1,0 +1,11 @@
+alias cgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias gh='git hist -n20'
+alias gs='git status'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias sed='gsed'
+alias ls='lsd'
+alias ll='lsd -ltah'
+alias tree='lsd --tree'
+alias pod='arch -arm64 pod'
+
