@@ -1,1 +1,1 @@
-/Users/amd/dotfiles/vim_dotfiles/vim
+../vim_dotfiles/vim
