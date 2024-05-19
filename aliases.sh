@@ -5,7 +5,7 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias sed='gsed'
 alias ls='lsd'
-alias ll='lsd -ltah'
+alias ll='lsd -lah'
 alias tree='lsd --tree'
 alias pod='arch -arm64 pod'
 
