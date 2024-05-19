@@ -1,8 +1,6 @@
-export PATH="$HOME/scripts:$HOME/brew/bin:/usr/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/scripts:$HOME/brew/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:$PATH"
 
-# Vim mode
+### Vim mode
 bindkey -v
 export EDITOR=vi
 
@@ -17,17 +15,17 @@ setopt SHARE_HISTORY
 
 
 ### Other settings
-source $HOME/dotfiles/aliases.sh
-source $HOME/dotfiles/prompt.sh
-source $HOME/dotfiles/configs.sh
+source $HOME/dotfiles/zshrc/aliases.sh
+source $HOME/dotfiles/zshrc/prompt.sh
+source $HOME/dotfiles/zshrc/configs.sh
 
-source $HOME/dotfiles/java.sh
-source $HOME/dotfiles/node.sh
-source $HOME/dotfiles/python.sh
-source $HOME/dotfiles/ruby.sh
+source $HOME/dotfiles/zshrc/java.sh
+source $HOME/dotfiles/zshrc/node.sh
+source $HOME/dotfiles/zshrc/python.sh
+source $HOME/dotfiles/zshrc/ruby.sh
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-  source $HOME/dotfiles/linux.sh
+  source $HOME/dotfiles/zshrc/linux.sh
 fi
 
 # [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
