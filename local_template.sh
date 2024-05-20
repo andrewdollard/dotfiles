@@ -1,1 +1,1 @@
-git config user.email ""
+git config user.email "" 2> /dev/null
