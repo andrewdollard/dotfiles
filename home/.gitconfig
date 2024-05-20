@@ -8,7 +8,7 @@
   status = auto
 [core]
   editor = "vim"
-  excludesfile = /Users/amd/.gitignore_global
+  excludesfile = ~/.gitignore_global
   pager = less -F -X
 [alias]
   cm = "commit"
