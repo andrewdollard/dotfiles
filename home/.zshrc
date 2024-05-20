@@ -28,7 +28,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   source $HOME/dotfiles/zshrc/linux.sh
 fi
 
-if [[ -z $HOME/dotfiles/local.sh ]]; then
+if [[ -f $HOME/dotfiles/local.sh ]]; then
   source $HOME/dotfiles/local.sh
 fi
 
