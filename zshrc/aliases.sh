@@ -1,4 +1,3 @@
-alias cgit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias gh='git hist -n20'
 alias gs='git status'
 alias gd='git diff'
