@@ -1,1 +1,1 @@
-git config user.email "" 2> /dev/null
+git config user.email "" 2> /dev/null && true
