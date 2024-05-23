@@ -2,11 +2,15 @@ alias gh='git hist -n20'
 alias gs='git status'
 alias gd='git diff'
 alias gds='git diff --staged'
+alias gcw="git add . && git commit -m 'wip'"
 alias gmm='git checkout master && git pull && git checkout - && git merge master'
 
 alias sed='gsed'
+alias tree='lsd --tree'
+
 alias ls='lsd'
 alias ll='lsd -lah'
-alias tree='lsd --tree'
+alias sed='gsed'
+
 alias pod='arch -arm64 pod'
 

@@ -1,4 +1,3 @@
-
 if [[ "$(command -v setkxbmap)" ]]
    && [[ "$(command -v xcape)" ]]; then
 
