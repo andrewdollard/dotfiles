@@ -1,0 +1,19 @@
+#! /usr/bin/env bash
+
+if [[ -z "${2}" ]]; then
+  echo "Please provide a branch slug and commit message!"
+  exit
+fi
+
+git stash
+git co master
+git pull
+git co -b "adollard-${1}"
+git stash pop
+git add .
+git commit -m "$2"
+if [[ $? -ne 0 ]]; then
+  git add .
+  git commit -m "$2"
+fi
+git pushu
