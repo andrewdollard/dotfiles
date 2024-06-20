@@ -6,7 +6,8 @@ export EDITOR=vi
 
 
 ### History
-HISTSIZE=100000
+HISTFILE=~/.zsh_history
+HISTSIZE=1000000
 SAVEHIST=$HISTSIZE
 bindkey '^R' history-incremental-search-backward
 setopt APPEND_HISTORY
