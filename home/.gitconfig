@@ -26,6 +26,7 @@
   b = "for-each-ref --sort='-committerdate' --format='%(committerdate:short)%20%20%(refname:lstrip=2)' refs/heads"
   cp = "cherry-pick"
   pushu = "push -u origin HEAD"
+  b = "branch --sort=-committerdate"
 [push]
   default = upstream
 [init]
