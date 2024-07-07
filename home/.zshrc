@@ -1,5 +1,9 @@
 export PATH="$HOME/scripts:/opt/local/bin:/opt/local/sbin:$PATH"
 
+### ZSH settings
+setopt auto_pushd
+
+
 ### Vim mode
 bindkey -v
 export EDITOR=vi
@@ -13,6 +17,10 @@ bindkey '^R' history-incremental-search-backward
 setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
+
+
+### Z
+. /usr/local/etc/profile.d/z.sh
 
 
 ### Autocomplete
