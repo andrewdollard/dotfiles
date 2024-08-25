@@ -1,6 +1,7 @@
 alias gti='git'
 alias gd='git diff'
 alias gti='git'
+alias gd='git diff'
 alias gh='git hist -n20'
 alias gs='git status'
 alias gp='git push'
