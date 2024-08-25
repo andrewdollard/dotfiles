@@ -16,6 +16,7 @@
   ds = "diff --staged"
   plom = "pull origin master"
   psom = "push origin master"
+  rbi = "rebase -i master"
   last = "log -1 HEAD"
   subup = "submodule foreach git pull origin master"
   lol = "log --graph --decorate --pretty=oneline --abbrev-commit --all"
