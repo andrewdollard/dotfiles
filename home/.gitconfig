@@ -24,8 +24,6 @@
   hist = log --graph --abbrev-commit --pretty=format:'%C(red)%h%C(reset) - %s %C(green)(%cr) %C(blue)<%an>%C(magenta)%d%C(reset)'
   lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
   b = "for-each-ref --sort='-committerdate' --format='%(committerdate:short)%20%20%(refname:lstrip=2)' refs/heads"
-  cp = "cherry-pick"
-  b = "branch --sort=-committerdate"
 [push]
   autoSetupRemote = true
   default = upstream
