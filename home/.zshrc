@@ -20,7 +20,7 @@ setopt SHARE_HISTORY
 
 
 ### Z
-. /usr/local/etc/profile.d/z.sh
+# . /usr/local/etc/profile.d/z.sh
 
 
 ### Autocomplete
