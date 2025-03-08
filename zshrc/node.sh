@@ -1,3 +1,5 @@
+export PATH="$PATH:$(npm get prefix -g)/bin"
+
 # NPM
 # if [ "$(command -v jenv)" ]; then
 #   NPM_PACKAGES="${HOME}/.npm-packages"
