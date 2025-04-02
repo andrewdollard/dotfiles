@@ -10,7 +10,7 @@
   excludesfile = ~/.gitignore_global
   pager = less -F -X
 [alias]
-  cm = "commit"
+  cm = "commit -m"
   co = "checkout"
   cp = "cherry-pick"
   ds = "diff --staged"
