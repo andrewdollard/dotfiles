@@ -32,6 +32,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 ### Other settings
 source $HOME/dotfiles/zshrc/aliases.sh
 source $HOME/dotfiles/zshrc/prompt.sh
+source $HOME/dotfiles/zshrc/aws.sh
 source $HOME/dotfiles/zshrc/configs.sh
 
 source $HOME/dotfiles/zshrc/java.sh
