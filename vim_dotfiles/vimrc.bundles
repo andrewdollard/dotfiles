@@ -82,7 +82,7 @@ nnoremap <silent> <Leader>mp :MarkdownPreview<CR>
 " Plug 'prashanthellina/follow-markdown-links'
 
 Plug 'hashivim/vim-terraform'
-autocmd BufWritePre *.tf call terraform#fmt()
+" autocmd BufWritePre *.tf call terraform#fmt()
 
 " Colors
 Plug 'morhetz/gruvbox'
