@@ -10,13 +10,14 @@
   excludesfile = ~/.gitignore_global
   pager = less -F -X
 [alias]
+  ap = "add -p"
   cm = "commit -m"
   co = "checkout"
   cp = "cherry-pick"
   ds = "diff --staged"
   plom = "pull origin master"
   psom = "push origin master"
-  rbi = "rebase -i master"
+  rbi = "rebase -i"
   last = "log -1 HEAD"
   subup = "submodule foreach git pull origin master"
   lol = "log --graph --decorate --pretty=oneline --abbrev-commit --all"
