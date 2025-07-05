@@ -34,6 +34,7 @@ source $HOME/dotfiles/zshrc/aliases.sh
 source $HOME/dotfiles/zshrc/aws.sh
 source $HOME/dotfiles/zshrc/configs.sh
 source $HOME/dotfiles/zshrc/prompt.sh
+source $HOME/dotfiles/zshrc/git.sh
 
 source $HOME/dotfiles/zshrc/java.sh
 source $HOME/dotfiles/zshrc/node.sh
@@ -59,6 +60,4 @@ fi
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-
 
