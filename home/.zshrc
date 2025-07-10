@@ -41,7 +41,7 @@ source $HOME/dotfiles/zshrc/node.sh
 source $HOME/dotfiles/zshrc/python.sh
 source $HOME/dotfiles/zshrc/ruby.sh
 
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+if [[ $(uname -s) == 'Linux' ]]; then
   source $HOME/dotfiles/zshrc/linux.sh
 fi
 
