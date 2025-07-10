@@ -45,6 +45,10 @@ if [[ $(uname -s) == 'Linux' ]]; then
   source $HOME/dotfiles/zshrc/linux.sh
 fi
 
+if [[ $(uname -s) == 'Darwin' ]]; then
+  source $HOME/dotfiles/zshrc/mac.sh
+fi
+
 if [[ -f $HOME/dotfiles/local.sh ]]; then
   source $HOME/dotfiles/local.sh
 fi
