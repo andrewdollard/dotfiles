@@ -13,3 +13,5 @@ for file in $(ls -d scripts/*); do
   mv "/usr/local/bin/${base}" "/usr/local/bin/${base}.old"
   ln -s "${dotfiles_dir}/${file}" "/usr/local/bin/${base}"
 done
+
+vim -c 'PlugInstall' -c 'PlugUpdate' -c 'qa'
