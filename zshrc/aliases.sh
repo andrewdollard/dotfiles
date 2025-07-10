@@ -15,5 +15,5 @@ alias ls='lsd'
 alias ll='lsd -lah'
 alias tree='lsd --tree'
 
-alias pod='arch -arm64 pod'
+alias pod='arch -arm64 bundle exec pod'
 
