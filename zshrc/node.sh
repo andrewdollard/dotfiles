@@ -1,4 +1,7 @@
-export PATH="$PATH:$(npm get prefix -g)/bin"
+if [[ command -v npm ]]; then
+  export PATH="$PATH:$(npm get prefix -g)/bin"
+fi
+
 
 # NPM
 # if [ "$(command -v jenv)" ]; then
