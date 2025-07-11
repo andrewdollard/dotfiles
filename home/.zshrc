@@ -1,4 +1,3 @@
-export PATH="$HOME/scripts:/opt/local/bin:/opt/local/sbin:$PATH"
 
 ### ZSH settings
 setopt auto_pushd
@@ -6,13 +5,9 @@ setopt auto_pushd
 
 ### Vim mode
 bindkey -v
-export EDITOR=vi
 
 
 ### History
-HISTFILE=~/.zsh_history
-HISTSIZE=1000000
-SAVEHIST=$HISTSIZE
 bindkey '^R' history-incremental-search-backward
 setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
