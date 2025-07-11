@@ -1,4 +1,3 @@
-
 ### ZSH settings
 setopt auto_pushd
 
@@ -12,10 +11,6 @@ bindkey '^R' history-incremental-search-backward
 setopt APPEND_HISTORY
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
-
-
-### Z
-# . /usr/local/etc/profile.d/z.sh
 
 
 ### Autocomplete
@@ -48,15 +43,4 @@ if [[ -f $HOME/dotfiles/local.sh ]]; then
   source $HOME/dotfiles/local.sh
 fi
 
-
-
-# [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
