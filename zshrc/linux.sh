@@ -1,4 +1,4 @@
-if [[ "$(command -v setkxbmap)" ]]
+if [[ "$(command -v setkxbmap)" ]] \
    && [[ "$(command -v xcape)" ]]; then
 
   setxkbmap -option ctrl:swapcaps
