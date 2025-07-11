@@ -1,4 +1,4 @@
-if [[ command -v npm ]]; then
+if [[ $(command -v npm) ]]; then
   export PATH="$PATH:$(npm get prefix -g)/bin"
 fi
 
