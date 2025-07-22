@@ -43,7 +43,7 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 
 " Vimux
-Plug 'preservim/vimux'
+Plug '3ximus/vimux'
 let g:VimuxUseNearestPane = 1
 "map <silent> <LocalLeader>rl :wa<CR> :VimuxRunLastCommand<CR>
 "map <silent> <LocalLeader>vi :wa<CR> :VimuxInspectRunner<CR>
@@ -87,7 +87,7 @@ Plug 'hashivim/vim-terraform'
 " Colors
 Plug 'morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'ajh17/Spacegray.vim'
+Plug 'vim-scripts/Spacegray.vim'
 " Plug 'felixhummel/setcolors.vim'
 Plug 'cormacrelf/vim-colors-github'
 " Plug 'endel/vim-github-colorscheme'
