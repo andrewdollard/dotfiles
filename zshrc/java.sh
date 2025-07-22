@@ -1,5 +1,5 @@
 # Android SDK / Java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # if [ "$(command -v jenv)" ]; then
 #   export ANDROID_SDK=/Users/andrew/Library/Android/sdk
