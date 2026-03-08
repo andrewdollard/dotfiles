@@ -1,5 +1,23 @@
-**Git Commits**: Use conventional format: <type>(<scope>): <subject> where type = feat|fix|docs|style|refactor|test|chore|perf. Subject: 50 chars max, imperative mood ("add" not "added"), no period. For small changes: one-line commit only. For complex changes: add body explaining what/why (72-char lines) and reference issues, if any. Keep commits atomic (one logical change) and self-explanatory. Split into multiple commits if addressing different concerns.
-**Markdown**: Assume that any markdown documents produced will be read by humans in their Markdown form. All table columns should be sized appropriately for their content to ensure readability as raw markdown
-**Diagrams in Markdown**: When adding flowcharts, sequence diagrams, etc. to a Markdown document, use Mermaid.
-**Code comments**: Prefer self-documenting code over comments. Comments should only be used when necessary to explain the WHY, not the WHAT.
-**Documentation location**: When creating research documents, plans, etc., write them to the `.claude_docs` directory of the current project. Filenames should be prepended with the topic, e.g.  `new-feature-name-research.md` for a file with research about a new feature. Related files (e.g.  plans) should use the same topic prefix so that all files related to the topic are grouped together.
+## Git Commits
+
+Use conventional format: <type>(<scope>): <subject> where type = feat|fix|docs|style|refactor|test|chore|perf. Subject: 50 chars max, imperative mood ("add" not "added"), no period. For small changes: one-line commit only. For complex changes: add body explaining what/why (72-char lines) and reference issues, if any. Keep commits atomic (one logical change) and self-explanatory. Split into multiple commits if addressing different concerns. Use scope in all cases. When Claude creates commits, a co-author trailer is automatically appended.
+
+## Shell Preferences
+
+Use bash for simple scripts, and Python 3 for more complex ones.
+
+## Markdown
+
+Assume that any markdown documents produced will be read by humans in their Markdown form. All table columns should be sized appropriately for their content to ensure readability as raw markdown.
+
+## Diagrams in Markdown
+
+When adding flowcharts, sequence diagrams, etc. to a Markdown document, use Mermaid.
+
+## Code Comments
+
+Prefer self-documenting code over comments. Comments should only be used when necessary to explain the WHY, not the WHAT.
+
+## Documentation Location
+
+When creating research documents, plans, etc., write them to the `.claude_docs` directory of the current project. Filenames should be prepended with the topic, e.g. `new-feature-name-research.md` for a file with research about a new feature. Related files (e.g. plans) should use the same topic prefix so that all files related to the topic are grouped together.
