@@ -1,2 +1,7 @@
 vim_plugins
 local.sh
+claude/*
+!claude/CLAUDE.md
+!claude/settings.json
+!claude/mcp
+
