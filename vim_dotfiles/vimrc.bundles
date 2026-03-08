@@ -57,6 +57,9 @@ nmap <silent> <LocalLeader>vs vip<LocalLeader>vs<CR>
 " Python
 Plug 'vim-scripts/indentpython.vim'
 
+" Scala
+Plug 'derekwyatt/vim-scala'
+
 " Distraction-free writing
 Plug 'junegunn/goyo.vim'
 let g:goyo_width = 100
