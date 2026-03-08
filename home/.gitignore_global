@@ -17,3 +17,4 @@ Thumbs.db
 job_test.py
 node_modules
 pyspark_setup.py
+__pycache__
