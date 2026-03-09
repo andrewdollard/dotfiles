@@ -1,9 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "model": "opus",
+  "alwaysThinkingEnabled": true,
   "mcpServers": {
     "date-server": {
-      "command": "python3",
-      "args": ["/Users/amd/dotfiles/claude/mcp/date-server.py"]
-    }
+        "command": "python3",
+        "args": ["/Users/amd/dotfiles/claude/mcp/date-server.py"]
+      }
+  },
+  "feedbackSurveyState": {
+    "lastShownTime": 1754677701508
   }
 }
